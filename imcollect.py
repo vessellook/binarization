@@ -50,8 +50,9 @@ class PairsGenerator(Sequence):
     """Вспомогательный класс для итерации по изображениям. Подходит для обучения моделей Keras.
     Нужен для того, чтобы не загружать весь датасет в память"""
 
-    def __init__(self, batch_size, original_img_paths, gt_img_paths):
+    def __init__(self, batch_size, img_size, original_img_paths, gt_img_paths):
         self.batch_size = batch_size
+        self.img_size = img_size
         self.original_paths = original_img_paths
         self.gt_paths = gt_img_paths
 
