@@ -1,4 +1,6 @@
 numpy
+keras-unet
+tensorflow
 scikit-image
 scikit-learn
 opencv-contrib-python
