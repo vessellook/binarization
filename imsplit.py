@@ -13,7 +13,7 @@ def _range_borders(start, finish, distance, step=None, full_cover=True):
             if full_cover:
                 pairs.append((finish - distance, finish))
             return pairs
-        pairs.append((finish - distance, finish))
+        pairs.append((start_border, finish_border))
     return pairs
 
 
